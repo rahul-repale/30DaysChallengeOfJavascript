@@ -36,3 +36,5 @@ do {
     console.log(`score is ${score}`);
 } while (score != 5);
 
+// Task 6 : program to calculate factorial of a number
+
