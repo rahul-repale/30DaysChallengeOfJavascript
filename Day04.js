@@ -37,4 +37,41 @@ do {
 } while (score != 5);
 
 // Task 6 : program to calculate factorial of a number
+let result = 1;
+let inputValue = 6;
+const OriginalValue = inputValue;
+do {
+    result *= inputValue;
+    inputValue--;
+} while (inputValue != 0);
+console.log(`The Factorial of number ${OriginalValue} is ${result}`);
 
+ 
+// Activity 4 : Nested Loop
+// Task 7 : print star pattern using nested for loop
+let numberOfRows = 5;
+for (let i = 0; i < numberOfRows; i++) {
+    let EveryRow = '';
+    for (let j = 0; j <= i; j++) {
+        EveryRow += "* "
+    }
+    console.log(EveryRow);
+}
+
+
+// Activity 5 : Loop control statement
+// Task 8 : print numbers from 1 to 10 and skip number 5 by using continue statement
+for (let i = 1; i <= 10; i++) {
+    if (i == 5) {
+        continue;
+    }
+    console.log(i);
+}
+
+// Task 9 : print numbers from 1 to 10 but stop the loop on number 7 using break statement
+for (let i = 1; i <= 10; i++) {
+    if (i === 7) {
+        break;
+    }
+    console.log(i);
+}
